@@ -41,14 +41,6 @@ section::after {
     z-index: -2;
 }
 
-#abovePic .text h1 {
-    font-size: 108px;
-}
-
-#abovePic .text h2 {
-    font-size: 32px;
-}
-
 #abovePic .text {
     color: #fff;
     max-width: 960px;
@@ -60,5 +52,15 @@ section::after {
     left: 50%;
     transform: translate(-50%, -70%);
 }
+
+#abovePic .text h1 {
+    font-size: 108px;
+}
+
+#abovePic .text h2 {
+    font-size: 32px;
+}
+
+
 
 
