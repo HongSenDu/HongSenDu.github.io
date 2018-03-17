@@ -2,6 +2,19 @@ body{
 margin:0;
 }
 
+section, footer {
+    background: #eee;
+    max-width: 960px;
+    padding: 32px calc((100% - 960px) / 2);
+}
+
+section::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 #above-fold {
     background: none;
     height: 100%;
