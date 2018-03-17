@@ -1,0 +1,25 @@
+body{
+margin:0;
+}
+
+#above-fold {
+    background: none;
+    height: 100%;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+#above-fold .background {
+    background: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
