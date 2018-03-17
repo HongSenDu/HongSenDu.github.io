@@ -26,7 +26,7 @@ section::after {
 }
 
 #above-fold .background {
-    background: url(img/background.jpg);
+    background: url(FrontPicture.jpg);
     background-position: center;
     background-size: cover;
     filter: brightness(50%);
