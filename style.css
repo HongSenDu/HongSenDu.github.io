@@ -35,4 +35,15 @@ section::after {
     width: 100%;
     z-index: -2;
 }
+#abovePic .text {
+    color: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
 
