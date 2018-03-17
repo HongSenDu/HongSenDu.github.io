@@ -15,7 +15,7 @@ section::after {
     clear: both;
 }
 
-#above-fold {
+#frontPic{
     background: none;
     height: 100%;
     margin-bottom: 0;
@@ -25,7 +25,7 @@ section::after {
     position: relative;
 }
 
-#above-fold .background {
+#frontPic .background {
     background: url(FrontPicture.jpg);
     background-position: center;
     background-size: cover;
