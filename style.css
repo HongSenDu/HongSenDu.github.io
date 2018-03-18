@@ -63,6 +63,24 @@ section::after {
 
 #abovePic .text h2 {
     font-size: 32px;
+}$size : 50px;
+$items : 5;
+$transition : .5s;
+$bounce : cubic-bezier(.3,1.4,.5,.9);
+$color-inner : gold;
+$color-outer : tomato;
+$background: mix($color-inner, $color-outer);
+$black : shade($color-outer, 80%);
+$start-scale : .5;
+$start-rot : 190deg;
+
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900');
+
+html, body { height: 100%; }
+body {
+	background: beige;
+	font-family: Alegreya Sans, sans-serif;
 }
 
 nav {
@@ -160,6 +178,17 @@ nav {
 		transform: rotate3d(0,0,1,0deg);
 	}
 
+	&:hover {
+		background: shade($color-inner, 90%);
+		color: $color-inner;
+	}
+	&:active {
+		background: shade($color-inner, 50%);
+		color: rgba($color-inner, .5);
+		transform: scale(.9);
+		transition-duration: 0s;
+	}
+}
 	&:hover {
 		background: shade($color-inner, 90%);
 		color: $color-inner;
