@@ -20,8 +20,13 @@ section::after {
     clear: both;
 }
 
+#line{
+    border-top:1px solid rgb(217, 217, 217);
+    border-bottom:1px solid rgb(217, 217, 217);
+}
 
-#abovePic{
+
+#abovePic {
     background: none;
     height: 100%;
     margin-bottom: 0;
@@ -32,14 +37,17 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(FrontPicture.jpg);
+    background: url(/Users/hongsendu/Downloads/FrontPicture.jpeg);
     background-position: center;
     background-size: cover;
+    filter: brightness(50%);
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: -2;
 }
+
+
 
 #abovePic .text {
     max-width: 960px;
@@ -63,4 +71,72 @@ section::after {
 
 #abovePic .text h2 {
     font-size: 32px;
+}
+
+#content{
+    background:white;
+    margin-top:40px;
+}
+#content h1{
+    text-align:center;
+    font-size:54px;
+}
+#content img{
+    max-width: 240px;
+    float: left;
+    border-radius: 50%;
+    margin: 34px 0 0 32px;
+
+}
+#content p {
+    margin-top: 16px;
+}
+
+#experience{
+    background: #fff;
+    color: #333;
+    margin-bottom: 32px;
+}
+#experience img{
+    float:right;
+}
+#here{
+    text-align:center;
+    text-decoration:
+}
+
+#here:before, #here:after{
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+#here:before {
+    right: 0.5em;
+    margin-left: -50%;
+   
+  }
+#here:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+#experience  a.image {
+    transition: 0.25s filter;
+}
+
+#experience  a.image:hover {
+    filter: brightness(60%);
+}
+
+#experience  a:not(.image) {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#experience  a:not(.image):hover {
+    color: #7f7f7f;
 }
