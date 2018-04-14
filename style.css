@@ -37,14 +37,14 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(./img/FrontPicture.jpg);
+    background: url(/img/FrontPicture.jpg);
     height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    z-index:-2;
 }
 
 
