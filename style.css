@@ -176,15 +176,16 @@ section::after {
 }
 #experience .name{
     font-size:25px;
-    color:lightblue;
+    color:#3C77D8;
     padding-top:5px;
 }
 
 #experience .title{
     font-size:20px;
-    color:darkseagreen;
+    color:#3EB919;
     padding-top:5px;
 }
+
 
 #experience .location{
     font-size:20px;
