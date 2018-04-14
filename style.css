@@ -37,7 +37,7 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(/Users/hongsendu/Downloads/FrontPicture.jpeg);
+    background: url(FrontPicture.jpeg);
     background-position: center;
     background-size: cover;
     filter: brightness(50%);
