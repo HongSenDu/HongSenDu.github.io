@@ -37,7 +37,7 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(FrontPicture.jpg);
+    background: url(./img/FrontPicture.jpg);
  
     height: 100%;
     width: 100%;
