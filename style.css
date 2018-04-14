@@ -37,12 +37,13 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(FrontPicture.jpeg);
-    min-height: 500px; 
+    background: url(FrontPicture.jpg);
+ 
+    height: 100%;
+    width: 100%;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    z-index:-2;
 }
 
 
@@ -72,22 +73,44 @@ section::after {
 }
 
 #content{
-    background:white;
-    margin-top:40px;
+    width:100%;
+    background:#F5F3F3;
+
 }
-#content h1{
+#content h3{
     text-align:center;
-    font-size:54px;
+    font-size:36px;
+    margin-bottom:10px;
 }
+#content h3:before, #content h3:after{
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+#content h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+   
+  }
+#content h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
 #content img{
     max-width: 240px;
     float: left;
-    border-radius: 50%;
-    margin: 34px 0 0 32px;
-
+    border-radius:50%;
+    margin-left:0px;
 }
 #content p {
-    margin-top: 16px;
+    margin-top: 15px;
+    margin-left:300px;
+    font-size:20px;
+    
 }
 
 #experience{
@@ -100,7 +123,7 @@ section::after {
 }
 #here{
     text-align:center;
-    text-decoration:
+    font-size:36px;
 }
 
 #here:before, #here:after{
@@ -110,7 +133,7 @@ section::after {
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 50%;
+    width: 20%;
 }
 #here:before {
     right: 0.5em;
@@ -121,20 +144,86 @@ section::after {
     left: 0.5em;
     margin-right: -50%;
   }
-#experience  a.image {
-    transition: 0.25s filter;
-}
 
-#experience  a.image:hover {
-    filter: brightness(60%);
-}
 
 #experience  a:not(.image) {
-    color: #333;
+
     text-decoration: none;
     transition: color 0.25s;
 }
 
+
+
 #experience  a:not(.image):hover {
     color: #7f7f7f;
+    
 }
+.a1{
+    width:100%;
+    float:left;     
+}
+
+.e1{
+    margin:0px 0 10px 35px;
+    float:left;
+    width:70%;
+    height:auto;
+    word-wrap: break-word;
+}
+.el p {
+    font-size:20px;
+}
+#experience .name{
+    font-size:25px;
+    color:lightblue;
+    padding-top:5px;
+}
+
+#experience .title{
+    font-size:20px;
+    color:darkseagreen;
+    padding-top:5px;
+}
+
+#experience .location{
+    font-size:20px;
+    color:black;
+    padding-top:5px;
+}
+
+#experience p{
+    margin-top: 30px;
+}
+
+
+
+.links, .info {
+    color: black;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 12px;
+    width: 28px;
+    height:28px;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+.links a:hover {
+    filter: brightness(50%);
+}
+
+.info {
+    margin: 24px auto 0;
+    padding-top: 24px;
+    border-top: #ccc solid 1px;
+    width: 75%;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
