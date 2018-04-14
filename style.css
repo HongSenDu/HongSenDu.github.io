@@ -37,7 +37,7 @@ section::after {
 }
 
 #abovePic .background {
-    background: url(/img/FrontPicture.png);
+    background: url(/img/FrontPicture.JPEG);
     height: 100%;
     width: 100%;
     background-attachment: fixed;
