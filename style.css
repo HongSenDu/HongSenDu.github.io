@@ -227,5 +227,65 @@ section::after {
 }
 
 
+@media only screen and (max-width: 960px) {
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    #abovePic {
+        display: none;
+    }
+    
+    #abovePic .text h1 {
+        font-size: 36px;
+    }
+
+    #abovePic .text h2 {
+        font-size: 18px;
+    }
+    
+    #content img {
+        display: block;
+        float: none;
+        margin: 0 auto 16px;
+    }
+
+    
+    #content p {
+        text-align:left;
+        float:none;
+        margin-left:0;
+    }
+    #here{
+        font-size:20px;
+    }
+    #content h1, #content h3 {
+        text-align: center;
+    }
+    #content{
+        text-align:center;
+    }
+    #content .line {
+        margin: 0 auto;
+    }
+
+    .image{
+        padding-left:50px;
+    }
+
+    #experience{
+        vertical-align:center ;
+    }
+    .e1{
+        float:right;
+        width:100%;
+        height:auto;
+        margin-bottom:32px;
+        text-align:center;
+    }
+    
+}
+
 
 
