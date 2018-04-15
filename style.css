@@ -274,7 +274,10 @@ section::after {
     }
 
     .image{
-        padding-left:45px;
+        text-align:center;
+        width:100%;
+        display:block;
+        margin:auto;
     }
     #here{
         font-size:15px;
