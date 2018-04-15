@@ -114,13 +114,16 @@ section::after {
     
 }
 
+
 #experience{
     background: #fff;
     color: #333;
-    margin-bottom: 32px;
+
 }
-#experience img{
-    float:right;
+.pic{
+    align-content: center;
+    width:100px;
+    height:auto;
 }
 #here{
     text-align:center;
@@ -147,7 +150,7 @@ section::after {
   }
 
 
-#experience  a:not(.image) {
+#experience  a:not(.pic) {
 
     text-decoration: none;
     transition: color 0.25s;
@@ -155,7 +158,7 @@ section::after {
 
 
 
-#experience  a:not(.image):hover {
+#experience  a:not(.pic):hover {
     color: #7f7f7f;
     
 }
@@ -171,9 +174,14 @@ section::after {
     height:auto;
     word-wrap: break-word;
 }
+
+
+
 .el p {
-    font-size:23px;
+    font-size:25px;
 }
+
+
 #experience .name{
     font-size:25px;
     color:#3C77D8;
@@ -185,7 +193,6 @@ section::after {
     color:#3EB919;
     padding-top:5px;
 }
-
 
 #experience .location{
     font-size:20px;
@@ -225,7 +232,6 @@ section::after {
     font-weight: 600;
     text-align: center;
 }
-
 
 @media only screen and (max-width: 960px) {
     section {
@@ -271,7 +277,7 @@ section::after {
     }
 
     .image{
-        padding-left:40px;
+        padding-left:50px;
     }
 
     #experience{
@@ -286,6 +292,4 @@ section::after {
     }
     
 }
-
-
 
