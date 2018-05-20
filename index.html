@@ -8,25 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script> window.sr = ScrollReveal();  </script>
 </head>
 
 <body>
   <section id="abovePic">
     <div class="background"></div>
         <div class="text">
-            <h1>Hong Sen Du</h1>
-            <h2 id="line">Web Developer + Student + Programmer</h2>
+            <h1 class='pop'>Hong Sen Du</h1>
+            <h2 id="line" class='pop'>Web Developer + Student + Programmer</h2>
         </div>
     </section>
-    <section id="content">
-        <h3>About Me</h3>
+    <section id="content" class='pop'>
+        <h3 class="wow bounceInUp">About Me</h3>
         <img src="./img/Me.jpg"/>
         <p>I am a high school student at the Bronx High School Of Science with the goal of incentivizing social change through the endless possibilities of computer science. I have experience in HTML and CSS, and I also work in Java and Python. One specific topic I am very interested in is machine learning and its capabilities. In school, I am on the Hackathon Committee to help organize AtomHacks and I am the secretary of the Bronx Science Hackers Club.<br><br>
         Besides Computer Science, I also love tutoring, so I volunteer weekly at a homeless shelter and tutor students in AP Computer Science. In addition, I love to read and hang out with my siblings.
         </p>
     </section>
-    <section id="experience">
+    <section id="experience" class='pop'>
             <h3 id="here">Here's what I have done so far</h3>
             <div class="a1">
                 <a class="image" href="https://childrenshavenbxny.org" target="_blank"><img  src="./img/childrenhaven.png" style="width:250px;height:250px;"/></a>
@@ -56,6 +57,10 @@
             <span>&copy; Hong Sen Du 2018</span>
         </div>
     </footer>
+    <script> 
+         sr.reveal('.pop');
+       
+    </script>
 </body>
 
 </html>
