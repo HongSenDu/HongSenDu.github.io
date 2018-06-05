@@ -336,7 +336,7 @@ section::after {
         text-align: center;
         color: white;
         text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
-        margin:0;
+        top: 70%;
         transform: translate(-50%, -80%);
     }
     .menu li{
@@ -354,7 +354,6 @@ section::after {
         background: url(img/FrontPic.jpg);
         height: 100%;
         width: 100%;
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
