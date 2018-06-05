@@ -40,7 +40,6 @@ section::after {
     background: url(img/FrontPic.jpg);
     height: 100%;
     width: 100%;
-    background-color:black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +264,6 @@ section::after {
     #abovePic .text h2 {
         font-size: 18px;
     }
-
     #content img {
         display: block;
         float: none;
