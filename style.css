@@ -336,13 +336,13 @@ section::after {
         text-align: center;
         color: white;
         text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
-        top: 70%;
-        transform: translate(-50%, -80%);
+        top: 60%;
+
     }
     .menu li{
       font-size:2vw;
       font-size:10px;
-      right:5px;
+      right:0px;
     }
     #abovePic #logo{
       position:absolute;
