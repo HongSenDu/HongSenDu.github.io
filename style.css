@@ -253,9 +253,11 @@ section::after {
     }
 
     #abovePic {
-        display: none;
+        height:300px;
     }
-
+    #abovePic .diamond{
+      display:none;
+    }
     #abovePic .text h1 {
         font-size: 36px;
     }
@@ -306,5 +308,4 @@ section::after {
         margin-bottom:32px;
         text-align:center;
     }
-
 }
