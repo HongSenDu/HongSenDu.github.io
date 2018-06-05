@@ -337,15 +337,18 @@ section::after {
         color: white;
         text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
         margin:0;
+        transform: translate(-50%, -80%);
     }
     .menu li{
       font-size:2vw;
       font-size:10px;
+      right:5px;
     }
     #abovePic #logo{
       position:absolute;
       width:75px;
       height:75px;
+      left:10px;
     }
     #abovePic #background {
         background: url(img/FrontPic.jpg);
