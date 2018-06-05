@@ -36,10 +36,11 @@ section::after {
     position: relative;
 }
 
-#abovePic .background {
-    background: url(/img/FrontPicture.JPEG);
+#abovePic #background {
+    background: url(img/FrontPic.jpg);
     height: 100%;
     width: 100%;
+    background-color:black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,29 +49,42 @@ section::after {
 }
 
 
+#abovePic .diamond {
+  height: 500px;
+  width: 500px;
+  border:solid white;
+
+  transform: translate(-50%, -50%) rotate(45deg) skew(-20deg, -20deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
 
 #abovePic .text {
     max-width: 960px;
-    margin: 0 auto;
-    font-weight: 600;
+    margin: 0;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -70%);
-    font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
-    color: #FFFFFF;
+    color: white;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
-
+    margin:0;
 }
 
 #abovePic .text h1 {
     font-size: 108px;
-    
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: bold;
+    font-weight: 1500;
 }
 
 #abovePic .text h2 {
     font-size: 32px;
+    font-family: 'Dancing Script', cursive;
 }
 
 #content{
@@ -94,7 +108,7 @@ section::after {
 #content h3:before {
     right: 0.5em;
     margin-left: -50%;
-   
+
   }
 #content h3:after {
     left: 0.5em;
@@ -141,7 +155,7 @@ section::after {
 #here:before {
     right: 0.5em;
     margin-left: -50%;
-   
+
   }
 #here:after {
     left: 0.5em;
@@ -159,11 +173,11 @@ section::after {
 
 #experience  a:not(.pic):hover {
     color: #7f7f7f;
-    
+
 }
 .a1{
     width:100%;
-    float:left;     
+    float:left;
 }
 
 .e1{
@@ -237,11 +251,11 @@ section::after {
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+
     #abovePic {
         display: none;
     }
-    
+
     #abovePic .text h1 {
         font-size: 36px;
     }
@@ -249,20 +263,20 @@ section::after {
     #abovePic .text h2 {
         font-size: 18px;
     }
-    
+
     #content img {
         display: block;
         float: none;
         margin: 0 auto 16px;
     }
 
-    
+
     #content p {
         text-align:left;
         float:none;
         margin-left:0;
     }
-   
+
     #content h1, #content h3 {
         text-align: center;
     }
@@ -292,6 +306,5 @@ section::after {
         margin-bottom:32px;
         text-align:center;
     }
-    
-}
 
+}
