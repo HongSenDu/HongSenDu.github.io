@@ -52,7 +52,6 @@ section::after {
   height: 500px;
   width: 500px;
   border:solid white;
-
   transform: translate(-50%, -50%) rotate(45deg) skew(-20deg, -20deg);
   position: absolute;
   top: 50%;
@@ -88,6 +87,71 @@ section::after {
     font-family: 'Dancing Script', cursive;
 }
 
+
+#abovePic #logo{
+  position:absolute;
+  left:40px;
+  top:10px;
+  width:100px;
+  height:100px;
+}
+
+#abovePic .menu {
+  margin:auto;
+  position:absolute;
+  top:30px;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  right:20px;
+  text-decoration:none;
+}
+
+.menu li{
+  display:inline;
+  text-align:center;
+  font-size:1.2vw;
+  margin:10px;
+  color:white;
+  text-transform: uppercase;
+  float:right;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration:none;
+  transition: 0.4s;
+}
+.menu a{
+  text-decoration: none;
+  color:white;
+}
+.parent:hover .child{
+  opacity: 0.3;
+
+}
+.parent .child:hover{
+  opacity: 1;
+
+}
+#resume{
+  border:solid;
+  color:white;
+  padding:10px;
+
+}
+.aboutMe{
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 0;
+  background-attachment: fixed;
+}
+.aboutMe img{
+  width:auto;
+  height:auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:-2;
+}
 #content{
     background:#F5F3F3;
 
@@ -274,11 +338,20 @@ section::after {
         text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
         margin:0;
     }
+    .menu li{
+      font-size:2vw;
+      font-size:10px;
+    }
+    #abovePic #logo{
+      position:absolute;
+      width:75px;
+      height:75px;
+    }
     #abovePic #background {
         background: url(img/FrontPic.jpg);
         height: 100%;
         width: 100%;
-        background-attachment: fixed;
+
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
