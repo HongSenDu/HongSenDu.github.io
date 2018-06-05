@@ -1,70 +1,330 @@
-{
-  "particles":{
-    "number":{
-      "value":125
-    },
-    "color":{
-      "value":"#067278"
-    },
-    "shape":{
-      "type":"circle",
-      "stroke":{
-        "width":1,
-        "color":"#067278"
-      },
-      "image":{
-        "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
-      }
-    },
-    "opacity":{
-      "value":0.5,
-      "random":true,
-      "anim":{
-        "enable":false,
-        "speed":1
-      }
-    },
-    "size":{
-      "value": 5,
-      "random":false,
-      "anim":{
-        "enable": false,
-        "speed":30
-      }
-    },
-    "line_linked":{
-      "enable": true,
-      "distance": 120,
-      "color":"#067278",
-      "width":1
-    },
-    "move":{
-      "enable":true,
-      "speed":2,
-      "direction":"none",
-      "straight":false
-    }
-  },
-  "interactivity":{
-    "events":{
-      "onhover":{
-        "enable":true,
-        "mode":"repulse"
-      },
-      "onclick":{
-        "enable": true,
-        "mode":"push"
-      }
-    },
-    "modes":{
-      "repulse":{
-        "distance":0.1,
-        "duration":0.4
-      },
-      "bubble":{
-        "distance":100,
-        "size":10
-      }
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+section, footer {
+    background: #eee;
+    max-width: 960px;
+    padding: 32px calc((100% - 960px) / 2);
+}
+
+section::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#line{
+    border-top:1px solid rgb(217, 217, 217);
+    border-bottom:1px solid rgb(217, 217, 217);
+}
+
+
+#abovePic {
+    background: none;
+    height: 100%;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+#abovePic #background {
+    background: url(img/FrontPic.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:-2;
+}
+
+
+#abovePic .diamond {
+  height: 500px;
+  width: 500px;
+  border:solid white;
+
+  transform: translate(-50%, -50%) rotate(45deg) skew(-20deg, -20deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+
+#abovePic .text {
+    max-width: 960px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+    margin:0;
+}
+
+#abovePic .text h1 {
+  font-size: 108px;
+  font-size: 7vw;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: bold;
+    font-weight: 1500;
+
+}
+
+#abovePic .text h2 {
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#content{
+    background:#F5F3F3;
+
+}
+#content h3{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:10px;
+}
+#content h3:before, #content h3:after{
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+#content h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+
   }
+#content h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+#content img{
+    max-width: 240px;
+    float: left;
+    border-radius:50%;
+    margin-left:0px;
+}
+#content p {
+    margin-top: 15px;
+    margin-left:300px;
+    font-size:20px;
+    word-wrap:break-word;
+}
+
+
+#experience{
+    background: #fff;
+    color: #333;
+
+}
+.pic{
+    align-content: center;
+    width:100px;
+    height:auto;
+}
+#here{
+    text-align:center;
+    font-size:36px;
+}
+
+#here:before, #here:after{
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+#here:before {
+    right: 0.5em;
+    margin-left: -50%;
+
+  }
+#here:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+#experience  a:not(.pic) {
+
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+
+
+#experience  a:not(.pic):hover {
+    color: #7f7f7f;
+
+}
+.a1{
+    width:100%;
+    float:left;
+}
+
+.e1{
+    margin:0px 0 10px 35px;
+    float:left;
+    width:70%;
+    height:auto;
+    word-wrap: break-word;
+}
+
+
+
+.el p {
+    font-size:25px;
+}
+
+
+#experience .name{
+    font-size:25px;
+    color:#3C77D8;
+    padding-top:5px;
+}
+
+#experience .title{
+    font-size:20px;
+    color:#3EB919;
+    padding-top:5px;
+}
+
+#experience .location{
+    font-size:20px;
+    color:black;
+    padding-top:5px;
+}
+
+#experience p{
+    margin-top: 30px;
+}
+
+
+
+.links, .info {
+    color: black;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 12px;
+    width: 28px;
+    height:28px;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+.links a:hover {
+    filter: brightness(50%);
+}
+
+.info {
+    margin: 24px auto 0;
+    padding-top: 24px;
+    border-top: #ccc solid 1px;
+    width: 75%;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #abovePic {
+        height:300px;
+    }
+    #abovePic .diamond{
+      display:none;
+    }
+    #abovePic .text h1 {
+        font-size: 36px;
+    }
+
+    #abovePic .text h2 {
+        font-size: 18px;
+    }
+    #abovePic .text {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+        margin:0;
+    }
+    #abovePic #background {
+        background: url(img/FrontPic.jpg);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-2;
+    }
+    #content img {
+        display: block;
+        float: none;
+        margin: 0 auto 16px;
+    }
+
+
+    #content p {
+        text-align:left;
+        float:none;
+        margin-left:0;
+    }
+
+    #content h1, #content h3 {
+        text-align: center;
+    }
+    #content{
+        text-align:center;
+    }
+    #content .line {
+        margin: 0 auto;
+    }
+
+    .image{
+        text-align:center;
+        width:100%;
+        display:block;
+        margin:auto;
+    }
+    #here{
+        font-size:15px;
+    }
+    #experience{
+        vertical-align:center ;
+    }
+    .e1{
+        float:right;
+        width:100%;
+        height:auto;
+        margin-bottom:32px;
+        text-align:center;
+    }
+
 }
