@@ -7,6 +7,8 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link href="https://fonts.googleapis.com/css?family=Amiri|Anaheim|Bitter|Cinzel|Cormorant+Garamond|Dancing+Script|Domine|Gloria+Hallelujah|Indie+Flower|Jua|Lobster|Oxygen|Shadows+Into+Light" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script> window.sr = ScrollReveal(); </script>
@@ -16,20 +18,28 @@
 <body>
   <section id="abovePic">
     <div id="background"></div>
-      <div class="diamond"></div>
-        <div class="text">
-            <h1 class='pop'>Hong Sen Du</h1>
-            <h2 id="line" class='doo'>Student + Web Developer + Programmer</h2>
-      </div>
-    </section>
-    <section id="content" class='pop'>
+    <div class="diamond"></div>
+    <div class="text">
+      <h1 class='pop'>Hong Sen Du</h1>
+      <h2 id="line" class='doo'>Student + Web Developer + Programmer</h2>
+    </div>
+   <a href="index.html"><img id="logo" src="HongSenDu_Logo.png" alt="hi">
+   <ul class="menu">
+     <div class="parent">
+       <li class="child"><a id="resume">Resume</a></li>
+       <li class="child"><a>Food Blog</a></li>
+       <li class="child"><a href="index.HTML">home</a></li>
+     </div>
+   </ul>
+  </section>
+  <section id="content" class='pop'>
         <h3 class="wow bounceInUp">About Me</h3>
         <img src="./img/Me.jpg"/>
         <p>I am a high school student at the Bronx High School Of Science with the goal of incentivizing social change through the endless possibilities of computer science. I have experience in HTML and CSS, and I also work in Java and Python. One specific topic I am very interested in is machine learning and its capabilities. In school, I am on the Hackathon Committee to help organize AtomHacks and I am the secretary of the Bronx Science Hackers Club.<br><br>
         Besides Computer Science, I also love tutoring, so I volunteer weekly at a homeless shelter and tutor students in AP Computer Science. In addition, I love to read and hang out with my siblings.
         </p>
     </section>
-    <section id="experience" class='pop'>
+  <section id="experience" class='pop'>
             <h3 id="here">Here's what I have done so far</h3>
             <div class="a1">
                 <a class="image" href="https://childrenshavenbxny.org" target="_blank"><img  src="./img/childrenhaven.png" style="width:250px;height:250px;"/></a>
@@ -50,7 +60,7 @@
                 </div>
             </div>
     </section>
-    <footer style="background-color:#737373;">
+  <footer style="background-color:#737373;">
         <div class="links">
             <a href="mailto:duh@bxscience.edu" style="width:28px;height:28px;" target="_blank"><img src="./img/mail.svg" /></a>
             <a href="https://www.linkedin.com/in/hongsendu/" target="_blank"><img src="./img/linkedin.svg"/></a>
@@ -59,16 +69,15 @@
             <span>&copy; Hong Sen Du 2018</span>
         </div>
     </footer>
-    <script>
+  <script>
          sr.reveal('.pop');
          sr.reveal('.doo', { duration: 500 });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-    particlesJS.load('background','particles.json',function(){
-    console.log('particles.json loaded...')
-    });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="javascript.js"></script>
 </body>
 
 </html>
