@@ -75,10 +75,12 @@ section::after {
 }
 
 #abovePic .text h1 {
-    font-size: 108px;
+  font-size: 108px;
+  font-size: 7vw;
     font-family: 'Cormorant Garamond', serif;
     text-decoration: bold;
     font-weight: 1500;
+
 }
 
 #abovePic .text h2 {
@@ -264,6 +266,24 @@ section::after {
     #abovePic .text h2 {
         font-size: 18px;
     }
+    #abovePic .text {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+        margin:0;
+    }
+    #abovePic #background {
+        background: url(img/FrontPic.jpg);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-2;
+    }
     #content img {
         display: block;
         float: none;
@@ -306,4 +326,6 @@ section::after {
         margin-bottom:32px;
         text-align:center;
     }
+
 }
+
