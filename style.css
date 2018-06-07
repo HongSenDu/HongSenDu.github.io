@@ -451,6 +451,7 @@ section::after {
     justify-content: center;
     width: 100%;
     right:0;
+    z-index:2;
   }
   #abovePic nav ul li a {
     position:relative;
@@ -462,7 +463,6 @@ section::after {
     padding:10px;
     width:100%;
     margin:0;
-    z-index:1;
   }
 
   .menu li{
@@ -474,7 +474,6 @@ section::after {
     text-transform: uppercase;
     transition: 0.4s;
     color:black;
-    z-index:1;
   }
 
   #abovePic #logo{
