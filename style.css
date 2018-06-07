@@ -103,8 +103,11 @@ section::after {
   justify-content: center;
   width: 100%;
   list-style-type: none;
-  right:20px;
+  right:10px;
   text-decoration:none;
+}
+.parent{
+  float:right;
 }
 
 .menu li{
@@ -114,7 +117,6 @@ section::after {
   margin:10px;
   color:white;
   text-transform: uppercase;
-  float:right;
   font-family: 'Cormorant Garamond', serif;
   text-decoration:none;
   transition: 0.4s;
@@ -253,7 +255,9 @@ section::after {
     word-wrap: break-word;
 }
 
-
+.burger-nav{
+  display:none;
+}
 
 .el p {
     font-size:25px;
@@ -311,7 +315,7 @@ section::after {
     text-align: center;
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     section {
         padding-left: 16px;
         padding-right: 16px;
@@ -344,6 +348,7 @@ section::after {
       font-size:10px;
       right:0px;
     }
+
     #abovePic #logo{
       position:absolute;
       width:75px;
@@ -401,5 +406,78 @@ section::after {
         margin-bottom:32px;
         text-align:center;
     }
+
+}
+@media screen and (max-width: 480px) {
+  .burger-nav{
+    display:block;
+    height:5px;
+    width:100%;
+  }
+  .burger-nav img{
+    height:30px;
+    position:absolute;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+  }
+  #resume{
+    border:none;
+    padding:0px;
+
+  }
+  .burger-nav .logo{
+    height:60px;
+    width:60px;
+    position:absolute;
+    left:20px;
+    top:5px;
+    cursor:pointer;
+  }
+  .menu li{
+    overflow:hidden;
+    height:0;
+  }
+  nav li.open{
+    height:auto;
+  }
+  #abovePic .menu {
+    margin:auto;
+    overflow:hidden;
+    top:0px;
+    justify-content: center;
+    width: 100%;
+    right:0;
+  }
+  #abovePic nav ul li a {
+    position:relative;
+    background-color:white;
+    border-bottom: 1px solid #404040;
+    display:block;
+    color:black;
+    justify-content: center;
+    padding:10px;
+    width:100%;
+    margin:0;
+  }
+
+  .menu li{
+    display:block;
+    text-align:left;
+    width:100%;
+    font-size:10px;
+    margin:0px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    color:black;
+  }
+
+  #abovePic #logo{
+    display:none;
+
+  }
+  .parent{
+    float:none;
+  }
 
 }
