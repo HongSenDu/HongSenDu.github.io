@@ -442,7 +442,7 @@ section::after {
   }
   nav li.open{
     height:auto;
-    z-index:auto;
+    z-index:100;
   }
   #abovePic .menu {
     margin:auto;
@@ -451,7 +451,7 @@ section::after {
     justify-content: center;
     width: 100%;
     right:0;
-    z-index:auto;
+    z-index:100;
   }
   #abovePic nav ul li a {
     position:relative;
@@ -463,6 +463,7 @@ section::after {
     padding:10px;
     width:100%;
     margin:0;
+    z-index:100;
   }
 
   .menu li{
@@ -474,6 +475,7 @@ section::after {
     text-transform: uppercase;
     transition: 0.4s;
     color:black;
+    position:relative;
   }
 
   #abovePic #logo{
@@ -481,7 +483,7 @@ section::after {
 
   }
   .parent{
-    float:none;
+    float:left;
   }
 
 }
