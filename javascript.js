@@ -13,9 +13,6 @@ $(document).ready(function(){
   $('.burgers').on("click",function(){
     $("nav li").toggleClass("open");
   });
-  $('.burgers').on("touchstart",function(){
-    $("nav li").toggleClass("open");
-  });
 });
 
 
