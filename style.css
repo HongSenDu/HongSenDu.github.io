@@ -415,7 +415,7 @@ section::after {
   .burger-nav{
     display:block;
     height:5px;
-    max-width:100%;
+    max-width: 100%;
   }
   .burger-nav img{
     height:30px;
