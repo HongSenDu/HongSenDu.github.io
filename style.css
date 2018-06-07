@@ -438,7 +438,6 @@ section::after {
     cursor:pointer;
   }
   .menu li{
-    overflow:hidden;
     height:0;
   }
   nav li.open{
