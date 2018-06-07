@@ -443,6 +443,9 @@ section::after {
   nav li.open{
     height:auto;
   }
+  nav ul.open{
+    height:auto;
+  }
   #abovePic .menu {
     margin:auto;
     overflow:hidden;
