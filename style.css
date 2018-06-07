@@ -442,9 +442,7 @@ section::after {
   }
   nav li.open{
     height:auto;
-  }
-  nav ul.open{
-    height:auto;
+    z-index:auto;
   }
   #abovePic .menu {
     margin:auto;
@@ -453,7 +451,7 @@ section::after {
     justify-content: center;
     width: 100%;
     right:0;
-    z-index:2;
+    z-index:auto;
   }
   #abovePic nav ul li a {
     position:relative;
