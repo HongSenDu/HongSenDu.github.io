@@ -99,7 +99,7 @@ section::after {
 #abovePic .menu {
   margin:auto;
   position:absolute;
-  top:30px;
+  top:40px;
   justify-content: center;
   width: 100%;
   list-style-type: none;
@@ -342,6 +342,9 @@ section::after {
         text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
         top: 60%;
 
+    }
+    #abovePic .menu {
+      top:33px;
     }
     .menu li{
       font-size:2vw;
