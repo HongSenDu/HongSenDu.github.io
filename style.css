@@ -442,7 +442,7 @@ section::after {
     height:0;
     display:block;
     text-align:left;
-    font-size:20px;
+    font-size:15px;
     margin:0px;
     text-transform: uppercase;
     color:black;
@@ -450,7 +450,7 @@ section::after {
   }
 
   .menu li.open{
-    height:auto;
+    height:39px;
   }
 
   #abovePic .menu {
@@ -472,7 +472,7 @@ section::after {
     padding:10px;
     width:100%;
     z-index:100;
-    font-size:20px;
+    font-size:15px;
   }
 
   #abovePic #logo{
