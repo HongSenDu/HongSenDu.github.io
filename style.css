@@ -437,50 +437,45 @@ section::after {
     top:5px;
     cursor:pointer;
   }
+
   .menu li{
     height:0;
+    display:block;
+    text-align:left;
+    font-size:10px;
+    margin:0px;
+    text-transform: uppercase;
+    color:black;
+
   }
-  nav li.open{
-    height:auto;
-    z-index:100;
+
+  .menu li.open{
+    height:33px;
   }
+
   #abovePic .menu {
     margin:auto;
     overflow:hidden;
     top:0px;
-    justify-content: center;
     width: 100%;
+    margin:0;
     right:0;
     z-index:100;
   }
-  #abovePic nav ul li a {
-    position:relative;
-    background-color:white;
+
+  #abovePic ul a {
     border-bottom: 1px solid #404040;
+    background-color:white;
     display:block;
     color:black;
     justify-content: center;
     padding:10px;
     width:100%;
-    margin:0;
     z-index:100;
-  }
-
-  .menu li{
-    display:block;
-    text-align:left;
-    width:100%;
-    font-size:10px;
-    margin:0px;
-    text-transform: uppercase;
-    transition: 0.4s;
-    color:black;
-    position:relative;
   }
 
   #abovePic #logo{
     display:none;
-
   }
   .parent{
     float:none;
