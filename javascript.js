@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.burgers').on("click",function(){
-    $("nav li").toggleClass("open");
+    $(".menu li").toggleClass("open");
   });
 });
 
