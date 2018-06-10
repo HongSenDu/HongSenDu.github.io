@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-
 html, body {
     width: 100%;
     height: 100%;
@@ -14,7 +12,6 @@ section, footer {
     padding: 10px calc((100% - 960px) / 2);
     padding-top:20px;
 }
-
 section::after {
     content: "";
     display: block;
@@ -30,7 +27,6 @@ p{
     border-bottom:1px solid rgb(217, 217, 217);
 }
 
-
 #abovePic {
     background: none;
     height: 100%;
@@ -40,7 +36,6 @@ p{
     width: 100%;
     position: relative;
 }
-
 #abovePic #background {
     background: url(img/FrontPic.jpg);
     height: 100%;
@@ -51,8 +46,6 @@ p{
     background-size: cover;
     z-index:-2;
 }
-
-
 #abovePic .diamond {
   height: 500px;
   width: 500px;
@@ -63,8 +56,6 @@ p{
   left: 50%;
 
 }
-
-
 #abovePic .text {
     max-width: 960px;
     margin: 0;
@@ -77,7 +68,6 @@ p{
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
     margin:0;
 }
-
 #abovePic .text h1 {
   font-size: 108px;
   font-size: 7vw;
@@ -86,13 +76,10 @@ p{
     font-weight: 1500;
 
 }
-
 #abovePic .text h2 {
     font-size: 32px;
     font-family: 'Dancing Script', cursive;
 }
-
-
 #abovePic #logo{
   position:absolute;
   left:40px;
@@ -100,7 +87,6 @@ p{
   width:100px;
   height:100px;
 }
-
 #abovePic .menu {
   margin:auto;
   position:absolute;
@@ -110,9 +96,6 @@ p{
   list-style-type: none;
   right:10px;
   text-decoration:none;
-}
-.parent{
-  float:right;
 }
 
 .menu li{
@@ -130,6 +113,10 @@ p{
   text-decoration: none;
   color:white;
 }
+
+.parent{
+  float:right;
+}
 .parent:hover .child{
   opacity: 0.3;
 
@@ -138,6 +125,7 @@ p{
   opacity: 1;
 
 }
+
 #resume{
   border:solid;
   color:white;
@@ -146,7 +134,7 @@ p{
 }
 
 #content{
-    background:#F5F3F3;
+    background:white;
 }
 #content h3{
     text-align:center;
@@ -175,7 +163,6 @@ p{
 
 
   }
-
 #content h3:after {
     left: 0.5em;
     margin-right: -50%;
@@ -214,12 +201,11 @@ p{
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
 }
-
 .skillbar-title {
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+  width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -231,7 +217,6 @@ width:110px;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
 }
-
 .skillbar-title span {
 	display:block;
 	background:rgba(0, 0, 0, 0);
@@ -245,7 +230,6 @@ width:110px;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
 }
-
 .skillbar-bar {
 	height:35px;
 	width:0px;
@@ -254,7 +238,6 @@ width:110px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 }
-
 .skill-bar-percent {
 	position:absolute;
 	right:10px;
@@ -265,27 +248,72 @@ width:110px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+
+#skillsText{
+  color: #22A39F;
+  font-family: 'Open Sans', sans-serif;
+  font-size:30px;
+  margin-bottom:20px;
+
+}
 #skills{
-  width:auto;
   background:#F5F3F3;
-  border-collapse: collapse;
-  margin-top:0;
   margin:auto;
   overflow: auto;
 }
-
-#skillsText{
-  margin-left:10px;
-  color: #22A39F;
-  font-family: 'Open Sans', sans-serif;
-  font-size:20px;
+#skills li{
+  margin-bottom: 10px;
 }
+
+.col-left{
+  float:left;
+  width:48%;
+  font-family: 'Montserrat', sans-serif;
+  padding-right:10px;
+}
+.col-right{
+  float:right;
+  width:48%;
+  font-family: 'Montserrat', sans-serif;
+  padding-left:10px;
+}
+ul.no-bullets {
+  list-style-type: none;
+}
+.ability-title{
+  font-size:15px;
+  display:inline-block;
+  width:60%;
+}
+
+.checked {
+    color: turquoise;
+  }
+.unchecked{
+  color:turquoise;
+}
+.half-checked{
+  color:turquoise;
+}
+.ability-score{
+  float:right;
+}
+
 
 #experience{
     background: #fff;
     color: #333;
+}
+#experience  a:not(.pic) {
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#experience  a:not(.pic):hover {
+    color: #7f7f7f;
 
 }
+
 .pic{
     align-content: center;
     width:100px;
@@ -298,7 +326,6 @@ width:110px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-
 #here:before, #here:after{
     background-color: #333;
     content: "";
@@ -317,36 +344,20 @@ width:110px;
     left: 0.5em;
     margin-right: -50%;
   }
-
-
-#experience  a:not(.pic) {
-
-    text-decoration: none;
-    transition: color 0.25s;
-}
-
-
-
-#experience  a:not(.pic):hover {
-    color: #7f7f7f;
-
-}
 .a1{
     width:100%;
+    margin-left:40px;
     float:left;
 }
-
 .e1{
-    margin:0px 0 10px 35px;
-    float:left;
-    width:70%;
+    margin:0px 30px 10px 35px;
+    margin-right:80px;
+    float:right;
+    width:60%;
     height:auto;
     word-wrap: break-word;
 }
 
-.burger-nav{
-  display:none;
-}
 
 .el p {
     font-size:25px;
@@ -355,24 +366,26 @@ width:110px;
 
 #experience .name{
     font-size:25px;
-    color:#3C77D8;
+    color:#37c;
     padding-top:5px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight:400;
 }
 
 #experience .title{
     font-size:20px;
-    color:#3EB919;
+    color:#5e9516;
     padding-top:5px;
 }
 
 #experience .location{
     font-size:20px;
-    color:black;
+    color:#555;
     padding-top:5px;
 }
 
 #experience p{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 
@@ -381,7 +394,6 @@ width:110px;
     color: black;
     text-align: center;
 }
-
 .links a {
     display: inline-block;
     margin: 0 12px;
@@ -390,11 +402,9 @@ width:110px;
     filter: brightness(100%);
     transition: filter 0.25s ease;
 }
-
 .links a:hover {
     filter: brightness(50%);
 }
-
 .info {
     margin: 24px auto 0;
     padding-top: 24px;
@@ -403,7 +413,9 @@ width:110px;
     font-weight: 600;
     text-align: center;
 }
-
+.burger-nav{
+  display:none;
+}
 @media screen and (max-width: 960px) {
     section {
         padding-left: 16px;
@@ -488,8 +500,12 @@ width:110px;
     #experience{
         vertical-align:center ;
     }
+    .a1{
+        margin-left:0px;
+    }
+
     .e1{
-        float:right;
+        margin-right:0px;
         width:100%;
         height:auto;
         margin-bottom:32px;
@@ -497,19 +513,34 @@ width:110px;
     }
 
 }
+@media screen and (max-width: 600px) {
+  .col-left{
+    float:none;
+    width:100%;
+    padding-right:0;
+  }
+  .col-right{
+    float:none;
+    width:100%;
+    padding-left:0;
+  }
 @media screen and (max-width: 480px) {
   .burger-nav{
+    z-index:100;
+    position:fixed;
+    top:0px;
     display:block;
     height:40px;
-    max-width: 100%;
+    width: 100%;
   }
-  .burger-nav img{
+  .burgers{
     height:30px;
     position:absolute;
-    right:20px;
+    right:50px;
     top:20px;
     cursor:pointer;
   }
+
   #resume{
     border:none;
     padding:0px;
@@ -540,9 +571,10 @@ width:110px;
   }
 
   #abovePic .menu {
+    position:fixed;
     margin:auto;
     overflow:hidden;
-    top:0px;
+    top:70px;
     width: 100%;
     margin:0;
     right:0;
