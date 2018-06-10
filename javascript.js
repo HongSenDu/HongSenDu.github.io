@@ -21,9 +21,13 @@ console.log('particles.json loaded...')
   });
 
   jQuery(document).ready(function(){
-  	jQuery('.skillbar').each(function(){
-  		jQuery(this).find('.skillbar-bar').animate({
-  			width:jQuery(this).attr('data-percent')
-  		},6000);
-  	});
+    $(window).scroll(function() {
+      if ($(window).scrollTop()>$('#content').offset().top-200){
+  	     jQuery('.skillbar').each(function(){
+  		       jQuery(this).find('.skillbar-bar').animate({
+  			          width:jQuery(this).attr('data-percent')
+                },2000);
+  	 });
+    }
   });
+});
