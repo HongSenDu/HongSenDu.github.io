@@ -569,6 +569,10 @@ ul.no-bullets {
   .menu li.open{
     height:39px;
   }
+	
+  #abovePic{
+    top:20px;
+  }	
 
   #abovePic .menu {
     position:fixed;
