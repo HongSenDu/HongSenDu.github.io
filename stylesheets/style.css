@@ -37,7 +37,7 @@ p{
     position: relative;
 }
 #abovePic #background {
-    background: url(img/FrontPic.jpg);
+    background: url(../img/FrontPic.jpg);
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -46,6 +46,7 @@ p{
     background-size: cover;
     z-index:-2;
 }
+
 #abovePic .diamond {
   height: 500px;
   width: 500px;
@@ -80,6 +81,7 @@ p{
     font-size: 32px;
     font-family: 'Dancing Script', cursive;
 }
+
 #abovePic #logo{
   position:absolute;
   left:40px;
@@ -524,6 +526,7 @@ ul.no-bullets {
     width:100%;
     padding-left:0;
   }
+}
 @media screen and (max-width: 480px) {
   .burger-nav{
     z-index:100;
@@ -565,14 +568,12 @@ ul.no-bullets {
     color:black;
 
   }
-
+  #abovePic{
+    top:20px;
+  }
   .menu li.open{
     height:39px;
   }
-	
-  #abovePic{
-    top:20px;
-  }	
 
   #abovePic .menu {
     position:fixed;
