@@ -514,7 +514,7 @@ ul.no-bullets {
         text-align:center;
     }
 
-}
+
 @media screen and (max-width: 600px) {
   .col-left{
     float:none;
@@ -527,6 +527,17 @@ ul.no-bullets {
     padding-left:0;
   }
 }
+  #abovePic #background {
+      background: url(../img/FrontPic.jpg);
+      height: 100%;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index:-2;
+  }
+
 @media screen and (max-width: 480px) {
   .burger-nav{
     z-index:100;
@@ -604,5 +615,4 @@ ul.no-bullets {
   .parent{
     float:none;
   }
-
 }
