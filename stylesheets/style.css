@@ -116,6 +116,7 @@ p{
   color:white;
 }
 
+
 .parent{
   float:right;
 }
@@ -538,6 +539,7 @@ ul.no-bullets {
       z-index:-2;
   }
 
+
 @media screen and (max-width: 480px) {
   .burger-nav{
     z-index:100;
@@ -615,4 +617,6 @@ ul.no-bullets {
   .parent{
     float:none;
   }
+
+
 }
