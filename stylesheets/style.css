@@ -617,6 +617,39 @@ ul.no-bullets {
   .parent{
     float:none;
   }
+  #abovePic {
+      background: none;
+      height: 80%;
+      margin-bottom: 0;
+      max-width: 100%;
+      padding: 0;
+      width: 100%;
+      position: relative;
+  }
+  #abovePic #background {
+      background: url(../img/FrontPic.jpg);
+      height: 100%;
+      width: 100%;
+      background-attachment:fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size:cover;
+      z-index:-2;
+  }
+  #abovePic .text {
+      width: 65%;
+  }
+  #abovePic .text h1 {
+    font-size: 108px;
+    font-size: 15vw;
+      font-family: 'Cormorant Garamond', serif;
+      text-decoration: bold;
+      font-weight: 1500;
 
+  }
+  #abovePic .text h2 {
+      font-size: 7vw;
+      font-family: 'Dancing Script', cursive;
+  }
 
 }
