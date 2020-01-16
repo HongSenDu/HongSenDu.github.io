@@ -1,3 +1,17 @@
+var slideRight = {
+    distance: '150%',
+    origin: 'right',
+    duration: 1000,
+    opacity: null
+};
+
+var slideLeft = {
+    distance: '150%',
+    origin: 'left',
+    duration: 1000,
+    opacity: null
+};
+
 $(document).ready(function(){
   $('.carousel').slick({
     dots: true,

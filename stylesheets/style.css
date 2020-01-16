@@ -22,6 +22,7 @@ p{
   font-family: 'Dosis', sans-serif;
 }
 
+
 #line{
     border-top:1px solid rgb(217, 217, 217);
     border-bottom:1px solid rgb(217, 217, 217);
@@ -257,8 +258,8 @@ p{
   font-family: 'Open Sans', sans-serif;
   font-size:30px;
   margin-bottom:20px;
-
 }
+
 #skills{
   background:#F5F3F3;
   margin:auto;
@@ -266,6 +267,12 @@ p{
 }
 #skills li{
   margin-bottom: 10px;
+}
+
+#timeline{
+  background-color:#141414;
+  max-width:100%;
+  padding:0;
 }
 
 .col-left{
@@ -389,6 +396,14 @@ ul.no-bullets {
 
 #experience p{
     margin-top: 25px;
+}
+
+#journey{
+  text-align:center;
+  font-size: 36px;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 20px;
 }
 
 
