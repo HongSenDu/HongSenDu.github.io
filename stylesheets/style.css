@@ -64,13 +64,13 @@ section::after {
 #content h3:before{
   position:absolute;
   margin-left:-17.5%;
-  margin-top:5.5%;
+  margin-top:6.25%;
 }
 
 #content h3:after{
   position:absolute;
   margin-left:10%;
-  margin-top:-5.5%;
+  margin-top:-6%;
 }
 
 
@@ -236,7 +236,7 @@ p{
 
 #care{
   background-color:#F0F0F0;
-  height:95%;
+  height:105%;
 }
 
 #passion{
