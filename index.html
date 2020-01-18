@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/timeline.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b8856d453d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Amiri|Anaheim|Bitter|Cinzel|Cormorant+Garamond|Ubuntu:400,700|Dancing+Script|Domine|Gloria+Hallelujah|Poppins|Indie+Flower|Jua|Lobster|Oxygen|Shadows+Into+Light|Open+Sans|Dosis|Varela+Round" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script> window.sr = ScrollReveal();</script>
@@ -31,6 +31,7 @@
         <li class="child"><a href="#care">My Passions</a></li>
         <li class="child"><a href="#timeline">My Journey</a></li>
         <li class="child"><a href="pages/Projects.html">Projects</a></li>
+        <li class="child"><a href="#content">Contact Me</a></li>
         <li class="child"><a href="./img/websiteResume.pdf" target="_blank" id="resume">Resume</a></li>
       </ul>
     </nav>
@@ -125,7 +126,7 @@
             <span class="flag">Congress App Challenge</span>
             <span class="time-wrapper"><span class="time">December 2018</span></span>
           </div>
-          <div id = "congress"><iframe width="560" height="350" src="https://www.youtube.com/embed/7fyRtnpz8K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div id = "congress"><iframe id = "video" width="560" height="350" src="https://www.youtube.com/embed/7fyRtnpz8K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
       </li>
 
@@ -190,21 +191,22 @@
 </section> -->
 
 <footer style="background-color:#FFFFFF;">
-  <!-- <section id="content" class='pop'>
+  <section id="content" class='pop'>
     <img src="./img/Me.jpg"/>
-          <h3 class="wow bounceInUp">
-          <p> I'm Bronx-bred, </p>
-          <p> a thrill-seeker </p>
-          <p> and accept food as payment </p>
-          </h3>
-  </section> -->
-  <div class="links">
-    <a href="mailto:duh@bxscience.edu" style="width:28px;height:28px;" target="_blank"><img src="./img/mail.svg" /></a>
-    <a href="https://www.linkedin.com/in/hongsendu/" target="_blank"><img src="./img/linkedin.svg"/></a>
+    <h3 class="wow bounceInUp">
+      <p class = "des" id = "contact1"> I'm Bronx-bred, </p>
+      <p class = "des" id = "contact2">  a thrill-seeker, </p>
+      <p class = "des" id = "contact3"> and accept food as payment. </p>
+    </h3>
+    <p id = "inTouch"> Let's get in touch! It's easiest to reach me through email or Facebook messenger. Let's talk over coffee about the next big thing! </p>
+
+    <div class="links">
+      <a href="mailto:hd2455@columbia.edu" target="_blank" id = "email"><i id = "e" class="fas fa-envelope-open-text fa-5x"></i></a>
+      <a href="https://www.linkedin.com/in/hongsendu/" target="_blank" id = "linkedIn">  <i id = "l" class="fab fa-linkedin fa-5x"></i> </a>
+      <a href="https://www.messenger.com/t/PandaCanFly" target="_blank" id = "messenger">  <i id = "m" class="fab fa-facebook-messenger fa-5x"></i></a>
+    </a>
   </div>
-  <div class="info">
-    <span>&copy; Hong Sen Du 2018</span>
-  </div>
+</section>
 </footer>
 
 
@@ -225,6 +227,11 @@ sr.reveal('#areas2',areas1);
 sr.reveal('#areas3',areas3);
 sr.reveal('.timelineRight',slideRight);
 sr.reveal('.timelineLeft',slideLeft);
+sr.reveal('.links', { delay:1500, distance: '50%', origin: 'bottom', duration: 500, opacity: 0});
+sr.reveal('#inTouch', { delay:1000, distance: '50%', origin: 'bottom', duration: 500, opacity: 0});
+sr.reveal('#contact1', { delay:500, distance: '50%', origin: 'bottom', duration: 500, opacity: 0});
+sr.reveal('#contact2', { delay:600, distance: '50%', origin: 'bottom', duration: 500, opacity: 0});
+sr.reveal('#contact3', { delay:700, distance: '50%', origin: 'bottom', duration: 500, opacity: 0});
 </script>
 </body>
 

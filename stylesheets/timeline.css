@@ -130,7 +130,6 @@ header h1{
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
-	font-size:100px;
 }
 
 .direction-l .flag:after,
@@ -211,6 +210,38 @@ header h1{
   z-index: 15;
 }
 
+@media(min-width: 480px){
+  .timeline {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 380px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 380px;
+    float: right;
+    text-align: left;
+  }
+	.timelinePhotoLeft{
+		height:15px;
+		width:20px;
+	}
+
+	.timelinePhotoRight{
+		height:15px;
+		width:20px;
+	}
+
+}
+
 @media(min-width: 768px){
   .timeline {
     width: 660px;
@@ -257,7 +288,7 @@ header h1{
   }
 
   .flag {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .direction-l .flag:after {
@@ -296,11 +327,22 @@ header h1{
 
   .time {
     padding: 5px 10px;
+		font-size:12px;
   }
 
   .direction-r .desc {
     margin: 1em 0 0 0.75em;
   }
+
+	.timelinePhotoLeft{
+		height:25px;
+		width:30px;
+	}
+
+	.timelinePhotoRight{
+		height:25px;
+		width:30px;
+	}
 }
 
 @media(min-width: 992px){
@@ -323,4 +365,10 @@ header h1{
     float: right;
     text-align: left;
   }
+	.flag{
+		font-size:16px;
+	}
+	.links{
+		height:80%;
+	}
 }
