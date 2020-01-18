@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 
-body{
-  font-family: 'Raleway', sans-serif;
-  color: #333;
-}
-
 header h1{
   text-align: center;
   font-weight: bold;
@@ -55,9 +50,7 @@ header h1{
 
 .timeline {
   position: relative;
-  padding: 0;
-  width: 100%;
-  margin-top: 20px;
+  padding-top: 50px;
   list-style-type: none;
 }
 
@@ -67,6 +60,7 @@ header h1{
   top: 0;
   content: ' ';
   display: block;
+	padding-top:30px;
   width: 2px;
   height: 100%;
   margin-left: -1px;
@@ -82,6 +76,8 @@ header h1{
 
 .timeline li {
   padding: 2em 0;
+	font-family: 'Oxygen', sans-serif;
+	color:black;
 }
 
 .timeline .hexa{
@@ -125,14 +121,16 @@ header h1{
 }
 
 .flag {
+	font-family: "Utubu", sans-serif;
+	font-weight:700;
   position: relative;
   display: inline;
   background: rgb(255,255,255);
-  font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
+	font-size:100px;
 }
 
 .direction-l .flag:after,
@@ -172,6 +170,7 @@ header h1{
   color: #fff;
 }
 
+
 .direction-l .time-wrapper {
   float: none;
 }
@@ -195,6 +194,13 @@ header h1{
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
+	border-radius:5px;
+}
+
+#congress{
+	position: relative;
+	margin: 0 0 0 0;
+	padding: 1em;
 }
 
 .direction-l .desc,
@@ -209,13 +215,14 @@ header h1{
   .timeline {
     width: 660px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .timeline li:after {
     content: "";
     display: block;
     height: 0;
+		padding-top:50px;
     clear: both;
     visibility: hidden;
   }
@@ -286,6 +293,7 @@ header h1{
     float: right;
   }
 
+
   .time {
     padding: 5px 10px;
   }
@@ -299,7 +307,7 @@ header h1{
   .timeline {
     width: 800px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .direction-l {

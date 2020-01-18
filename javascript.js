@@ -1,15 +1,63 @@
 var slideRight = {
+    delay:200,
     distance: '150%',
     origin: 'right',
-    duration: 1000,
+    duration: 1500,
     opacity: null
 };
 
 var slideLeft = {
+    delay:200,
     distance: '150%',
     origin: 'left',
-    duration: 1000,
+    duration: 1500,
     opacity: null
+};
+
+
+var care = {
+    delay:500,
+    distance: '200%',
+    origin: 'bottom',
+    duration: 1000,
+    opacity: 0
+};
+
+var timeline = {
+  delay:1000,
+  opacity: 0
+}
+
+var passion = {
+    delay:1000,
+    distance: '1000%',
+    origin: 'bottom',
+    duration: 1000,
+    opacity: 0
+};
+
+var areas1 = {
+    delay:1400,
+    distance: '1000%',
+    origin: 'bottom',
+    duration: 1000,
+    opacity: 0
+};
+
+var areas2 = {
+    delay:1800,
+    distance: '1000%',
+    origin: 'bottom',
+    duration: 1000,
+    opacity: 0
+};
+
+var areas3 = {
+    delay:2200,
+    distance: '1000%',
+    origin: 'bottom',
+    duration: 1000,
+    opacity: 0
 };
 
 $(document).ready(function(){
