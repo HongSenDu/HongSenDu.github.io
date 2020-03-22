@@ -1,3 +1,11 @@
+
+
+// $(document).ready( function() {
+//   $('.burgers').on("click",function(){
+//     $('.menu li').toggleClass("open");
+//   });
+// });
+
 var slideRight = {
     delay:200,
     distance: '25%',
@@ -60,22 +68,6 @@ var areas3 = {
     opacity: 0
 };
 
-$(document).ready(function(){
-  $('.carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    arrows:false,
-  });
-});
-
-$(document).ready(function(){
-  $('.burgers').on("click",function(){
-    $(".menu li").toggleClass("open");
-  });
-});
 
 if (window.innerWidth < 480){
   document.getElementById("e").className = "fas fa-envelope-open-text fa-2x";
